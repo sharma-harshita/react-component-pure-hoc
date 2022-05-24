@@ -12,7 +12,7 @@ It is a functional component or a function which takes a component as a paramete
 
 
 
-**Pure Component** : A component will be rendered only in the case when the state variables value will be changed or updated. Ex: if initially state varible name = "John", now this value gets updated to name = "Doe", then rendering the component again is good and we should. But if the state variable gets updated with the same value name = "John", then in this case we should not rerender our component. 
+**Pure Component** : A component will be rendered only in the case when the state or props variables value will be changed or updated. Ex: if initially state varible name = "John", now this value gets updated to name = "Doe", then rendering the component again is good and we should. But if the state variable gets updated with the same value name = "John", then in this case we should not rerender our component. 
 
 
 Class component : React Provides React.PureComponent to create a pure component which inside runs shouldComponentUpdate lifecycle method to check if the prev state or props value has been updated with new value or not. If the value is new then only the component will be rendered on screen. 
